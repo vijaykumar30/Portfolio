@@ -348,8 +348,6 @@ input, select {
     width: 100%;
     display: flex;
     font-size: 20px;
-    height: 25px;
-
 
 }
 .label {
@@ -358,6 +356,31 @@ input, select {
    margin-right: 24px;
    text-transform: capitalize;
 
+}
+
+
+@media only screen and (max-width:630px){
+    .label {
+        float: left;
+       flex: 1;
+    }
+    .contactdetails{
+        
+        font-size: 16px;
+    
+    }
+}
+
+@media only screen and (max-width:480px){
+    .label {
+        float: left;
+       flex: 0.6;
+    }
+    .contactdetails{
+        
+        font-size: 12px;
+    
+    }
 }
 
 .value {
