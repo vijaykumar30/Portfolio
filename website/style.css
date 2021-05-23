@@ -1,0 +1,373 @@
+/*
+REMOVE THE DEFAULT CODES
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+/* here is my code */
+
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: Itim;
+}
+.menu {
+    background-color: rgba(0, 0, 255,0.2);
+    text-align: center;
+    padding: 25px 0;
+}
+.menu ul {
+    display: block;
+    
+}
+.menu ul li {
+    display: inline-block;
+   text-align: center;
+   padding: 0 10px;
+}
+.menu ul li a {
+    font-family: Itim;
+    font-size: 16px;
+    font-weight: bold;
+}
+.menu a img {
+   height: 80px;
+   padding: 20px;
+}
+.vijay {
+    text-align: center;
+}
+.vijay .leftblock {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.vijay .leftblock img {
+   width: 150px;
+   
+}
+.vijay .rightblock {
+    display: inline-block;
+    padding: 25px;
+    text-align: right;
+}
+.label {
+    width: 50%;
+   flex: 1;
+   margin-right: 24px;
+   text-transform: uppercase;
+
+}
+.value {
+    padding-left: 2px;
+    flex: 1;
+    text-align: left;
+}
+.details-row {
+    width: 100%;
+    padding-bottom: 5px;
+    display: flex;
+    
+}
+
+.social {
+    background-color: rgba(0, 255,0,0.3);
+    padding: 25px 0;
+}
+
+.social h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size:24px ;
+    padding-bottom: 20px;
+}
+.social ul {
+    display: block;
+    text-align: center;
+    
+}
+.social ul div {
+    width: 90px;
+    display: inline-block;
+}
+
+.social ul li a img {
+    display: inline-block;
+    width: 50%;
+    align-items: center;
+}
+
+.social ul div h6{
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+}
+.insta {
+    border-radius: 35%;
+}
+
+/*About me*/
+
+.aboutme {
+
+    width: 75%;
+    padding: 10px 0;
+    border: 2px solid #244241;
+}
+
+.subhead {
+    width:100%;
+    background-color: #ff9;
+    display: block;
+    text-align: -webkit-center;
+    padding:25px 0;
+}
+.total {
+    width:80%;
+    border: 1px solid #000;
+    background-color: rgba(255, 0, 0, 0.2);
+    margin: 25px 10%;
+
+}
+.total h3 {
+    padding: 5px ;
+}
+.prevedu h5 {
+    
+        font-size: 16px;
+        font-family: Itim;
+    
+
+}
+
+.total p {
+    text-align: justify;
+    padding:5px;
+    font-size: 16px;
+    font-style: italic;
+}
+.total p h5 {
+    font-size: 16px;
+    font-family: Itim;
+}
+@media only screen and (min-width:500px) {
+    .total {
+        width:400px;
+        text-align: -webkit-center;
+
+    }
+}
+ @media only screen and (min-width:750px) {
+     .subhead {
+         
+         display:grid;
+         align-items: stretch;
+         text-align: -webkit-center;
+         grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+        
+
+     }
+  
+    .total {
+        width:350px;
+        border: 1px solid #000;
+        background-color: rgba(255, 0, 0, 0.2);
+        margin: 25px 5%;
+    }
+     
+ }
+ 
+ @media only screen and (min-width:1125px) {
+    .subhead {
+        display:grid;
+        align-items: stretch;
+        text-align: -webkit-center;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    
+    }
+ 
+   .total {
+       width:350px;
+       border: 1px solid #000;
+       background-color: rgba(255, 0, 0, 0.2);
+       margin: 25px 5% ;
+   }
+    
+}
+
+.resume {
+    background-color: rgba(128, 0,128,0.2);
+    padding: 10px 25px;
+
+}
+.resume h2 {
+    text-align: center;
+    font-size: x-large;
+}
+.resume h2 a {
+ 
+    font-style: italic;
+}
+/*About me*/
+
+/* Courses*/
+.semhead {
+    background-color: #ff9;;
+   
+}
+.semhead h2 {
+    text-align: center;
+    font-size: x-large;
+    font-family: Itim;
+    font-weight: 800;
+    font-style: italic;
+    padding: 25px 0 0px 0;
+}
+
+.total ul li {
+    text-align: left;
+    padding: 2px 15px;
+    text-transform: capitalize;
+
+}
+
+
+
+/* Courses*/
+
+.contactblock {
+    margin: 5%;
+    padding:25px 0 ;
+    display: block;
+    width: 90%;
+    text-align: right;
+    float: left;
+}
+.contactblock h3 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Itim ;
+    padding: 15px 0 25px 0;
+}
+.contactdetails{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    height: 25px;
+
+
+}
+.label {
+    float: left;
+   flex: 1;
+   margin-right: 24px;
+   text-transform: capitalize;
+
+}
+
+.value {
+    padding-left: 2px;
+    float: left;
+    flex: 1;
+    text-align: left;
+}
+
+.copyright {
+    padding: 10px;
+  font-size: small;
+}
